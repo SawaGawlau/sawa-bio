@@ -1,5 +1,5 @@
 import express, { Application, Request, Response } from 'express'
-import './middleware/dotenv'
+// import './middleware/dotenv'
 import path from 'path'
 
 const app: Application = express()
