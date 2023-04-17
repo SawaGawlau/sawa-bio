@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "jsx": "preserve",
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "useDefineForClassFields": true,
+    "incremental": true,
+    "declaration": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "rootDir": ".",
+    "removeComments": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "allowJs": true,
+    "paths": {
+      "@views/*": ["views/*"],
+      "@models/*": ["models/*"],
+      "@controllers/*": ["controllers/*"],
+      "@validations/*": ["validations/*"],
+      "@middleware/*": ["middleware/*"],
+      "@interfaces/*": ["interfaces/*"],
+      "@routes/*": ["routes/*"]
+    },
+    "typeRoots": ["types"],
+    "module": "commonjs",
+    "resolveJsonModule": true
+  },
+  "include": ["**/*"],
+  "exclude": ["node_modules", "test", "dist", "**/*spec.ts"]
+}

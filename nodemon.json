@@ -1,0 +1,16 @@
+{
+  "watch": [
+    "config",
+    "controllers",
+    "interfaces",
+    "locales",
+    "middleware",
+    "models",
+    "routes",
+    "views",
+    "validations"
+  ],
+  "ext": ".ts,.json,.pug",
+  "ignore": ["./node_modules/**"],
+  "exec": "NODE_ENV=development ts-node app.ts"
+}
