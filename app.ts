@@ -1,18 +1,18 @@
 import express, { Application, Request, Response } from 'express'
 // import './middleware/dotenv'
-import path from 'path'
 
 const app: Application = express()
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json({ limit: '50mb' }))
-app.use(express.static(path.join(path.resolve(), './public')))
 
-app.get('/hello', (req: Request, res: Response) => {
-  return res.send('Hello on sawa-bio testing app')
+app.get('/', (req: Request, res: Response) => {
+  return res.send('Hello from sawa.bio')
 })
 
-app.get('/sawa', (req: Request, res: Response) => {
-  return res.send('Hello Sawa!')
+app.get('/:name', (req: Request, res: Response) => {
+  const name: string = req.params.name
+
+  return res.send(`Hello ${name}!`)
 })
 
 const port: number = 8080
