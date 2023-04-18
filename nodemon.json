@@ -12,5 +12,5 @@
   ],
   "ext": ".ts,.json,.pug",
   "ignore": ["./node_modules/**"],
-  "exec": "NODE_ENV=development ts-node app.ts"
+  "exec": "ts-node app.ts"
 }

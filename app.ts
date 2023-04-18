@@ -15,7 +15,7 @@ app.get('/sawa', (req: Request, res: Response) => {
   return res.send('Hello Sawa!')
 })
 
-const port: number = 80
+const port: number = 8080
 
 app.listen(port, () => {
   console.log(`Start of the application on port ${port}`)
